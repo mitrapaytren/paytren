@@ -1,0 +1,23 @@
+{{ if .Site.Params.widgets.subscribe }}
+<section class="sidebar-widget">
+    <div class="widget-subscribe subscribe-active">
+        <div class="widget-subscribe__content">
+            <div class="widget-subscribe__newsletter">
+                <h3 class="widget-subscribe__title">Newsletter</h3>
+                <p class="widget-subscribe__description">Sign up and receive the latest tips via email.</p>
+            </div>
+
+            <form method="post" action="/subscribe/" class="">
+                <input class="confirm" type="hidden" name="confirm"><input class="location" type="hidden" name="location"><input class="referrer" type="hidden" name="referrer">
+
+                <div class="form-group">
+                    <input class="subscribe-email" type="email" name="email" placeholder="Your email address ...">
+                </div>
+                <button class="" type="submit"><span>Subscribe</span></button>
+                <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
+            </form>
+
+        </div>
+    </div>
+</section>  
+{{ end }}

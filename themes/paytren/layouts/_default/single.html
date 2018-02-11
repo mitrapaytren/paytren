@@ -1,0 +1,63 @@
+{{ partial "header" . }}
+<main id="site-main" class="site-main">
+    <div class="container">
+        <div class="main-content clearfix">
+            <div class="content-area">
+                <article class="post-article">
+                    <header class="post-header">
+                        <h2 class="post-feed__title">{{ .Title }}</h2>
+
+                        {{ partial "post-meta.html" . }}
+
+                    </header>  
+
+                    {{ if .Params.image }}  
+                    <div class="post-media">
+                        <a href="{{ .Permalink }}" class="post-link">
+                            <figure>
+                                <img class="post-image img" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+                            </figure>
+                        </a>
+                    </div>
+                    {{ end }}
+
+                    <div class="post-content">
+                        {{ .Content }}
+                    </div>
+
+                    <footer class="post-footer">
+                        <div class="post-footer__wrapper">
+                            <div class="post-footer__tags">
+
+                                {{ if .Params.tags }}
+                                <span class="post-footer__tags-item"><b>Tags: </b>
+                                {{ range $index, $tag := .Params.tags }}{{ if gt $index 0 }} {{ end }}<a class="post-footer__tags-link" href="{{ "tags/" | relLangURL }}{{ . | urlize | lower }}" rel="tag">{{ . }}</a>{{ end }}
+                                </span>
+                                {{ end }}
+
+                            </div>
+
+                            {{ partial "social-share.html" . }}
+
+                        </div>
+
+                        {{ partial "post-nav.html" . }}
+
+                    </footer>
+                </article>
+
+            <!-- related posts with the same tags -->
+            {{ partial "related-posts.html" . }}
+
+            {{ if and .Site.DisqusShortname (not .Params.disableComments) }}
+                {{ template "_internal/disqus.html" . }}
+            {{ end }}
+
+            </div>
+
+            {{ partial "sidebar.html" . }}
+            
+        </div>
+    </div>
+</main>
+{{ partial "footer" . }}

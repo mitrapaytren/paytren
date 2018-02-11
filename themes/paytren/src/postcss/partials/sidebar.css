@@ -1,0 +1,26 @@
+/* Sidebar Area
+/* ---------------------------------------------------------- */
+.widget-post {
+    margin-bottom: 1.5em;
+}
+.widget-post__media {
+    float: left;
+    width: 80px;
+    padding-top: 6px;
+    
+}
+.widget-post__body {
+    margin-left: 98px;
+}
+.widget-post__link:hover {
+    text-decoration: none;
+}
+.widget-post__title {
+    font-weight: 500;
+    color: var(--primary-text-color);
+    margin-bottom: 0.5em;
+    
+    &:hover {
+        color: var(--link-color);
+    }
+}

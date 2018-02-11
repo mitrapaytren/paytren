@@ -1,0 +1,30 @@
+<section class="sidebar-widget">
+    <div class="widget-resent">
+       <div class="widget-header">
+           <h3 class="widget-title">Artikel Terbaru</h3>
+       </div>
+
+        {{ $recent_articles_num := (.Site.Params.widgets.recent_articles_num | default 12) }}
+        {{ range first $recent_articles_num (where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "post"))) }}
+
+        <div class="widget-post clearfix">
+            {{ if .Params.featured_image }}
+            <div class="widget-post__media">
+                <a href="{{ .RelPermalink }}" class="widget-post__link">
+                    <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" class="widget-post__image">
+                </a>
+            </div>
+            {{ end }}
+            
+            <div class="widget-post__body">
+                <a href="{{ .RelPermalink }}" class="widget-post__link"><p class="widget-post__title">{{ .Title }}</p></a>
+
+                {{- if not .Date.IsZero }}
+                <time class="widget-post__date" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{.Date.Format ( .Site.Params.dateformat | default "January 02, 2006")}}</time>
+                {{- end }}
+            </div>
+        </div>   
+        {{ end }}
+    </div>
+</section>
+

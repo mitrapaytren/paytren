@@ -1,0 +1,109 @@
+baseurl = "/"
+title = "Web Support PayTren"
+description = "Web Support Resmi Pendaftaran PayTren"
+languageCode = "id"
+theme = "paytren"
+paginate = "6" # Number of posts per page
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+[permalinks]
+  post = "/:slug/"
+  page = "/:slug/"
+ 
+[params]
+  description = "Web Support Resmi Pendaftaran PayTren"
+  logo = "images/nettren-tuts.png"
+  postSections = ["post"]
+  
+  # Isi sesuai data pengguna anda
+  
+  nama = "Akhlis Mujtahid"
+  id_mitra = "TN0108643"
+  no_hp = "085229009056"
+  whatsapp = "085229009056"
+  bbm = "7db3e061"
+    
+# Menu Navigasi Website Anda
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/post/"
+    name = "Artikel"
+    weight = 2
+
+[[menu.main]]
+    url = "/marketing-plan/"
+    name = "Marketing Plan"
+    weight = 3
+[[menu.main]]
+    url = "/panduan/"
+    name = "Panduan"
+    weight = 4
+[[menu.main]]
+    url = "/cara-daftar-paytren/"
+    name = "Cara Daftar"
+    weight = 5
+
+# Icon Sosial yang terdapat pada bagian footer website Anda
+# Isikan pada kolom "name" sesuai dengan nama icon sosial yang Anda gunakan
+
+[[menu.icon]]
+    url = "https://facebook.com/namaanda"
+    name = "facebook"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://twitter.com/namaanda"
+    name = "twitter"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://gplus.com/namaanda"
+    name = "gplus"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.pinterest.com/in/namaanda"
+    name = "pinterest-circled"
+    weight = 4
+
+[[menu.icon]]
+    url = "https://www.instagram.com/namaanda"
+    name = "instagram"
+    weight = 5
+       
+# Menu navigasi yang terdapat pada Footer/bawah website, isikan sesuai dengan nama dan url halaman website anda
+
+[[menu.footer]]
+    url = "/"
+    name = "Beranda"
+    weight = 1
+
+[[menu.footer]]
+    url = "/tentang-kami/"
+    name = "Tentang Kami"
+    weight = 2
+
+[[menu.footer]]
+    url = "/kontak/"
+    name = "Hubungi Kami"
+    weight = 3
+[[menu.footer]]
+    url = "/pertanyaan/"
+    name = "Q & A"
+    weight = 4  
+[[menu.footer]]
+    url = "/privacy-policy/"
+    name = "Privacy Policy"
+    weight = 5  
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+author = "authors"
+featured = "featured"

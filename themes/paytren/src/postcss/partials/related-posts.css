@@ -1,0 +1,36 @@
+/* Related Posts
+/* ---------------------------------------------------------- */
+
+.related-post {
+    lost-column: 1/3;
+}
+.related-post__media {
+    margin-bottom: 1em;
+}
+.related-post__link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    
+    &:hover {
+        text-decoration: none;
+        color: var(--orange);
+    }
+}
+
+@media (--small-screen) {
+    .related-post {
+        width: 100%;
+    }
+    .related-post__media {
+        float: left;
+        width: 84px;
+        padding-top: 6px;
+    }
+    .related-post__body {
+        margin-left: 96px;
+    }
+}
+
+@media (--extra-small-screen) {
+  
+}

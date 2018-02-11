@@ -1,0 +1,5 @@
+<div class="tren-support tren-content is-center tren-content--dark-bg">
+    <h2 class="treni-support__headline">Butuh Bantuan? Hubungi Sponsor PayTren</h2>
+    {{ with .Site.Params.nama }}
+    <h3>Nama: {{ . }} {{ end }} {{ with .Site.Params.id_mitra }} ( ID Mitra {{ . }} {{ end }} ) Telp/SMS/Whatsapp: {{ with .Site.Params.whatsapp }} {{ . }}</h3> {{ end }}
+</div>

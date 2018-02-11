@@ -1,0 +1,24 @@
+{{ partial "header" . }}
+<main id="site-main" class="site-main">
+    <div class="container">
+        <div class="main-content clearfix">
+            <div class="content-area">
+                <div class="post-feed__wrapper">
+
+                {{ range ( .Paginate (where .Data.Pages "Type" "post")).Pages }}
+                {{ .Render "summary"}}
+                {{ end }}
+
+                </div>
+
+                {{ partial "pagination.html" . }}
+
+            </div>
+
+            {{ partial "sidebar.html" . }}
+            
+        </div>
+    </div>
+</main>
+{{ partial "footer" . }}
+

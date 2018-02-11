@@ -1,0 +1,71 @@
+/* Post Footer
+/* ---------------------------------------------------------- */
+
+.post-footer__wrapper {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
+.post-footer__tags-link {
+    color: var(--link-color);
+    font-size: 1.4rem;
+    text-transform: lowercase;
+    background: var(--body-background);
+    padding: 5px 10px;
+    margin-left: 8px;
+}
+.more-post {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.prev-post,
+.next-post {
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    
+    &:hover {
+        color: var(--hovered-link-color);
+        text-decoration: none;
+    }
+}
+.social-share__icon {
+    display: inline-block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    color: var(--light-text-color);
+    margin-left: 8px;
+
+    &:hover {
+        transform: scale(1.06);
+    }
+}
+.fb-icon {
+    background: var(--fb-color);
+}
+.tw-icon {
+    background: var(--tw-color);
+}
+.gplus-icon {
+    background: var(--gplus-color);
+}
+
+/*post navigation*/
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+.prev-post,
+.next-post {
+    font-weight: bold;
+
+    &:hover {
+        color: var(--link-color);
+    }
+}

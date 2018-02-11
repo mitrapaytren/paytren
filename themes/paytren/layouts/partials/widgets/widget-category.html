@@ -1,0 +1,25 @@
+{{ if .Site.Params.widgets.categories }}
+{{ if isset .Site.Taxonomies "categories" }}
+{{ if not (eq (len .Site.Taxonomies.categories) 0) }}
+<section class="sidebar-widget">
+    <div class="widget-cats">
+       <div class="widget-header">
+           <h3 class="widget-title">Categories</h3>
+       </div>
+        
+        <div class="widget-content widget-cats__list">
+
+            <ul class="widget-cats__items">
+               {{ range $name, $items := .Site.Taxonomies.categories }}
+                  <li class="widget-cats__item"><a href="{{ "categories/" | relLangURL }}{{ $name | urlize | lower }}"  class="widget-cats__link">{{ $name | title }}</a></li>
+                {{ end }}
+            </ul>
+            
+
+
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
