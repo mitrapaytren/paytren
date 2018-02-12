@@ -1,0 +1,26 @@
+{{ if .Site.Params.widgets.author }}
+<section class="sidebar-widget">
+    <div class="widget-author">
+       <div class="widget-header">
+           <h3 class="widget-title">About Me</h3>
+       </div>
+        
+        {{ if and (not .Site.Author.avatar) (not .Site.Author.name) (not .Site.Author.bio) }}
+    <p class="authorbox__warning"><strong>WARNING:</strong> Authorbox is activated, but [Author] parameters are not specified.</p>
+    {{ end }}
+     
+           {{ with .Site.Author.avatar }}
+            <figure class="widget-author__thumb">
+                <img alt="{{ $.Site.Author.name }} avatar" src="{{ $.Site.Author.avatar | relURL }}" class="widget-author__image avatar" height="90" width="90">
+            </figure>
+            {{ end }}
+            {{ with .Site.Author.name }}
+            <h3 class="widget-author__name">{{ . }}</h3>
+            {{ end }}
+            {{ with .Site.Author.bio }}
+            <p class="widget-author__bio">{{ . }}</p>
+             {{ end }}
+
+    </div>
+</section>
+{{ end }} 

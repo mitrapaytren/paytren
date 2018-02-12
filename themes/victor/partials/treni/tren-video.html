@@ -1,0 +1,21 @@
+<div class="cover-image" style="background-image: url({{ .Site.BaseURL }}/images/treni-video-background.jpg)">
+    <div class="tren-video container">
+        <header class="tren-sub-title">
+            <h3 class="video-title">Rata-Rata 97% Orang Memahami PayTren Setelah Menonton Video Ini. Giliran Anda Sekarang!</h3>
+        </header>
+        <div class="tren-video">
+            <video controls="">
+                 {{ if .Params.treni_video }}
+                <source type="video/mp4" src="{{ .Params.treni_video | relURL }}">  {{ end }}
+            </video>
+        </div>
+    </div>
+</div>
+    
+<div class="tren-user tren-sub-title tren-title__bg">
+    <div class="container">
+       <h2 class="tren-user__know tren-title--light">Tahukah Anda?</h2>
+        <h3 class="tren-user__title tren-title--light">Saat ini PayTren Telah Digunakan Lebih Dari 1.6 Juta Orang Di 5 Benua Dan Akan Terus Bertambah</h3>
+        <p class="tren-title--light">Membuktikan banyak masyarakat  terbantu dan merasakan manfaat serta keuntungan PayTren. Berbagai macam transaksi dengan mudah cukup via Handphone kapan dan dimana saja.</p>
+    </div>
+</div>

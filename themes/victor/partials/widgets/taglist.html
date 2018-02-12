@@ -1,0 +1,25 @@
+{{- if .Site.Params.widgets.tags }}
+{{- if isset .Site.Taxonomies "tags" }}
+{{- if not (eq (len .Site.Taxonomies.tags) 0) }}
+<section class="sidebar-widget">
+    <div class="widget-tags">
+       <div class="widget-header">
+           <h3 class="widget-title">Tags</h3>
+       </div>
+        
+        <div class="widget-content widget-tags__list">
+
+            <ul class="widget-tags__items">
+                {{ range $name, $items := .Site.Taxonomies.tags }}
+                    <li class="widget-tags__item"><a href="{{ "tags/" | relLangURL }}{{ $name | urlize | lower }}" title="{{ $name }}" class="tag-link">{{ $name }}{{ if $.Site.Params.widgets.tags_counter }} ({{ $items.Count }}){{ end }}</a></li>
+                {{ end }}
+            </ul>
+
+        </div>
+    </div>
+</section>
+{{- end }}
+{{- end }}
+{{- end }}
+
+
