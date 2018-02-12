@@ -1,10 +1,10 @@
 ---
-title: Web Support PayTren
-description: Web Support PayTren desc
+title: "Web Support PayTren"
+description: Web Support PayTren
 contact:
-  bbm: 7db3e061
-  id_mitra: TN0108643
-  nama: Akhlis Mujtahid
-  whatsapp: "085229009057"
+    nama: "Akhlis Mujtahid"
+    id_mitra: "TN0108643"
+    whatsapp: "085229009056"
+    bbm: "7db3e061"
 ---
 
