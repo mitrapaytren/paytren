@@ -13,22 +13,22 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "SEO Description", name: "description", widget: "text"}
-      - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Categories", name: "categories", widget: "list"}
-      - {label: "Authors", name: "authors", widget: "list"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Judul", name: "title", widget: "string"}
+      - {label: "Tanggal Terbit", name: "date", widget: "datetime"}
+      - {label: "Deskripsi", name: "description", widget: "text"}
+      - {label: "Tag", name: "tags", widget: "list"}
+      - {label: "Kategori", name: "categories", widget: "list"}
+      - {label: "Penulis", name: "authors", widget: "list", required: false}
+      - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
+      - {label: "Konten", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Halaman"
     files:
       - file: "content/_index.md"
-        label: "Home Page"
+        label: "Beranda"
         name: "home"
         fields:
-          - {label: Title, name: title, widget: string}
+          - {label: Judul, name: title, widget: string}
           - {label: Deskripsi, name: description, widget: string}
           - {label: "Kontak", name: contact, widget: object, fields: [
               {label: "Nama", name: "nama", widget: string},
