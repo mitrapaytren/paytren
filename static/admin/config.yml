@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Deskripsi, name: description, widget: string}
           - {label: "Kontak", name: contact, widget: object, fields: [
               {label: "Nama", name: "nama", widget: string},
-              {label: "ID MITRA", name: "id_mitra", widget: "text"}]}
-              {label: "Whatsapp", name: "whatsapp", widget: "text"}]}
+              {label: "ID MITRA", name: "id_mitra", widget: "text"},
+              {label: "Whatsapp", name: "whatsapp", widget: "text"},
               {label: "BBM", name: "bbm", widget: "text"}]}
               
