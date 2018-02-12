@@ -11,7 +11,7 @@ collections:
 
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Post" # Used in the UI
-    folder: "content/post" # The path to the folder where the documents are stored
+    folder: "site/content/post" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
@@ -57,8 +57,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-    
-      - file: "content/_index.md"
+      - file: "site/content/_index.md"
         label: "Home Page"
         name: "home"
         fields:
@@ -101,7 +100,7 @@ collections:
                 name: "text"
                 widget: "text"
          
-      - file: "content/contact/_index.md"
+      - file: "site/content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
         fields:
