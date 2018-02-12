@@ -58,7 +58,7 @@ collections:
     label: "Pages"
     files:
     
-      - file: "site/content/_index.md"
+      - file: "content/_index.md"
         label: "Home Page"
         name: "home"
         fields:
@@ -101,7 +101,7 @@ collections:
                 name: "text"
                 widget: "text"
          
-      - file: "site/content/contact/_index.md"
+      - file: "content/contact/_index.md"
         label: "Contact Page"
         name: "contact"
         fields:
