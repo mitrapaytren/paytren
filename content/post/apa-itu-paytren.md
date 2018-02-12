@@ -5,7 +5,7 @@ categories:
   - paytren
 tags:
   - info
-coverImage: /images/apa-itu-paytren.png
+image: /images/Fintech-indonesia.jpg
 ---
 Apa itu PayTren?
 
