@@ -5,7 +5,7 @@ categories:
   - paytren
 tags:
   - info
-coverImage: /images/uploads/cover-post.jpg
+coverImage: /images/apa-itu-paytren.png
 ---
 Apa itu PayTren?
 
