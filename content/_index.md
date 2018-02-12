@@ -7,5 +7,3 @@ contact:
     whatsapp: "085229009056"
     bbm: "7db3e061"
 ---
-
-Setiap pemilik website pasti selalu menginginkan websitenya itu memiliki kinerja dan performa yang maksimal bukan?
