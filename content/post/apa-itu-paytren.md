@@ -1,13 +1,24 @@
-+++
-title = "Apa Itu PayTren?"
-description = "PayTren itu merupakan aplikasi alat pembayaran digital yang memudahkan transaksi apapun."
-tags = ["paytren"]
-categories = ["web hosting"]
-slug = "apa-itu-paytren"
-date = "2018-02-01"
-image = "/images/post/2018/01/work-better-together.png"
-authors = ["akhlis"]
-+++
+
+---
+title: Apa Itu PayTren?
+date: 2018-02-01T07:38:02.700Z
+draft: false
+categories:
+  - About Me
+  - Achievements
+tags:
+  - Sagar Khatri Achievements
+  - CV
+  - Portfolio
+keywords:
+  - Sagar Khatri Achievements
+  - CV
+  - Portfolio
+  - Sagar portfolio
+autoThumbnailImage: false
+thumbnailImagePosition: top
+image: /images/uploads/cover-post.jpg
+---
 
 Apa itu PayTren? 
 
