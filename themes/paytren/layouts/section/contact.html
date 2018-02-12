@@ -1,0 +1,43 @@
+{{ partial "header" . }}
+<main id="site-main" class="site-main">
+    <div class="container">
+        <div class="main-content clearfix">
+            <div class="content-area">
+                <article class="post-article">
+                    <header class="post-header">
+                        <img src="{{ .Params.logo }}" alt="" class="db w4 center pv4">
+
+                        <h2 class="post-feed__title">{{ .Title }}</h2>
+                    </header>  
+
+                    {{ if .Params.image }}  
+                    <div class="post-media">
+                        <a href="{{ .Permalink }}" class="post-link">
+                            <figure>
+                                <img class="post-image img" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
+                            </figure>
+                        </a>
+                    </div>
+                    {{ end }}
+
+                    <div class="post-content">
+                        {{ .Content }}
+                    </div>
+                </article>
+
+                <div class="flex-ns mb3">
+                        {{ range .Params.contact_entries }}
+                        <div>
+                            <h4 class="f4 b lh-title mb2 primary">{{ .heading }}</h4>
+                            <p>{{ .text }}</p>
+                        </div>
+                    {{ end }}
+                </div>
+            </div>
+
+            {{ partial "sidebar.html" . }}
+            
+        </div>
+    </div>
+</main>
+{{ partial "footer" . }}
