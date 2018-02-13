@@ -14,7 +14,8 @@
     <div class="main-content post-layout">
         <div class="content-page">
             <div class="register-form tren-content">
-                <form method="POST" action="https://formspree.io/fluxstarter@gmail.com">
+                {{ with $.Site.Data.setting.contact }}
+                <form method="POST" action="https://formspree.io/{{ .email }}"> {{ end }}
                     <label>Nama Lengkap</label> : <input type="text" name="Nama" placeholder="Nama Lengkap"><br>
                     <label>Jenis Kelamin</label> : <input type="text" name="Jenis Kelamin" placeholder="Laki-laki/Perempuan"><br>
                     <label>Alamat Lengkap</label> : <input type="text" name="Alamat" placeholder="Alamat Lengkap"><br>
