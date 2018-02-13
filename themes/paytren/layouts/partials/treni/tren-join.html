@@ -15,8 +15,9 @@
             <p>atau</p>
             <div class="tren-button">
                
+               {{ with $.Site.Data.setting.contact }}
                 <button class="reg-button"><a href="https://api.whatsapp.com/send?phone={{ .whatsapp }}&text=Saya%20Mau%20Daftar%20PayTren%20Lisensi%20Basic%20%0AAtas%20%0ANama%20%3A%0AAlamat%20Lengkap%20%3A" target="_blank"><i class="icon-whatsapp"></i> | Beli Via Whatsapp</a></button>
-                
+                {{ end }}
             </div>
         </div>
     </div>
