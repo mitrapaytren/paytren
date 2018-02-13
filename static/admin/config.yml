@@ -31,7 +31,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Kontak", name: contact, widget: object, fields: [
               {label: "Nama", name: "nama", widget: string},
               {label: "ID MITRA", name: "id_mitra", widget: string},
-              {label: "Whatsapp", name: "whatsapp", widget: string},
+              {label: "Whatsapp", name: "whatsapp", widget: "number"},
               {label: "BBM", name: "bbm", widget: string}]}
           - {label: "Akun Sosial", name: social, widget: list, fields: [
               {label: "Icon", name: "icon", widget: string},
