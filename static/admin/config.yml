@@ -28,6 +28,13 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Judul, name: site_title, widget: string, required: false}
           - {label: Deskripsi, name: site_description, widget: string, required: false}
+          - {label: Logo, name: logo, widget: "image", required: false}
+          - {label: "Main Menu", name: main_menu, widget: list, fields: [
+              {label: "Nama", name: "nama", widget: string},
+              {label: "URL", name: "url", widget: string}]}
+          - {label: "Footer Menu", name: footer_menu, widget: list, fields: [
+              {label: "Nama", name: "nama", widget: string},
+              {label: "URL", name: "url", widget: string}]}
           - {label: "Kontak", name: contact, widget: object, fields: [
               {label: "Nama", name: "nama", widget: string},
               {label: "ID MITRA", name: "id_mitra", widget: string},
