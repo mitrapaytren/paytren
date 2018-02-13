@@ -5,6 +5,6 @@ contact:
   bbm: 7db3e061
   id_mitra: TN0108643
   nama: Akhlis Mujtahid
-  whatsapp: 085229009056
+  whatsapp: "085229009056"
 ---
 
