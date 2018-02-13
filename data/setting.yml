@@ -8,7 +8,7 @@ main_menu:
       url: "/tentang-kami"
     - name: Kontak
       url: "Kontak"
-menu_footer:
+footer_menu:
     - name: Beranda
       url: "/"
     - name: Tentang Kami
