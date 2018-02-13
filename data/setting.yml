@@ -11,7 +11,7 @@ main_menu:
   - nama: Panduan
     url: /panduan
   - nama: Daftar
-    url: /cara-daftar
+    url: /daftar-paytren
 footer_menu:
   - nama: Beranda
     url: /
