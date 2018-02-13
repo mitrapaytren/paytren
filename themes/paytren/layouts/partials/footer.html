@@ -10,17 +10,17 @@
                     </div>
                 </div>
 
-            <div class="footer-social">
+                  <div class="footer-social">
 
-                    {{ if .Site.Menus.icon }}
+                    {{ with $.Site.Data.setting }}
                     <div class="social-links">
-                    {{ range sort .Site.Menus.icon }}
-                    <a class="social-links__icon" href="{{ .URL }}"><i class="icon-{{ .Name }}"></i></a>
-                    {{ end }}
+                        {{ range .social }}
+                        <a class="social-links__icon" href="{{ .url }}"><i class="icon-{{ .icon }}"></i></a>
+                        {{ end }}
                     </div>
                     {{ end }}
 
-                </div>
+                  </div>
                 
                  <div class="footer-menu">
                     <nav class="nav-footer">
