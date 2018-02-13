@@ -5,20 +5,6 @@ media_folder: "static/images" # Folder where user uploaded files should go
 public_folder: "images"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
-    folder: "content/post" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Judul", name: "title", widget: "string"}
-      - {label: "Tanggal Terbit", name: "date", widget: "datetime"}
-      - {label: "Deskripsi", name: "description", widget: "text"}
-      - {label: "Tag", name: "tags", widget: "list"}
-      - {label: "Kategori", name: "categories", widget: "list"}
-      - {label: "Penulis", name: "authors", widget: "list", required: false}
-      - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
-      - {label: "Konten", name: "body", widget: "markdown"}
   - name: "setting"
     label: "Setting"
     files:           
@@ -45,4 +31,30 @@ collections: # A list of collections the CMS should be able to edit
               {label: "Icon", name: "icon", widget: string},
               {label: "Nama", name: "nama", widget: string},
               {label: "URL", name: "url", widget: string}]}
-              
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "content/post" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields: # The fields each document in this collection have
+      - {label: "Judul", name: "title", widget: "string"}
+      - {label: "Tanggal Terbit", name: "date", widget: "datetime"}
+      - {label: "Deskripsi", name: "description", widget: "text"}
+      - {label: "Tag", name: "tags", widget: "list"}
+      - {label: "Kategori", name: "categories", widget: "list"}
+      - {label: "Penulis", name: "authors", widget: "list", required: false}
+      - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
+      - {label: "Konten", name: "body", widget: "markdown"}
+  - name: "pages"
+    label: "Halaman"
+    files:
+      - folder: "content/page"
+        label: "Halaman"
+        name: "contact"
+        create: true # Allow users to create new documents in this collection
+        slug: "{{slug}}"
+        fields:
+         - {label: "Judul", name: "title", widget: "string"}
+         - {label: "Deskripsi", name: "description", widget: "text"}
+         - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
+         - {label: "Konten", name: "body", widget: "markdown"}
