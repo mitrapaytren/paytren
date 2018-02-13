@@ -19,8 +19,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Penulis", name: "authors", widget: "list", required: false}
       - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
       - {label: "Konten", name: "body", widget: "markdown"}
-  - name: "pages"
-    label: "Halaman"
+  - name: "setting"
+    label: "Setting"
     files:           
       - file: "data/setting.yml"
         label: "Global Setting"
