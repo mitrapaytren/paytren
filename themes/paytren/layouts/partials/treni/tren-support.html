@@ -1,4 +1,6 @@
+{{ with $.Site.Data.setting.contact }}
 <div class="tren-support tren-content is-center tren-content--dark-bg">
     <h2 class="treni-support__headline">Butuh Bantuan? Hubungi Sponsor PayTren</h2>
     <h3>Nama: {{.nama}} ( ID Mitra {{ .id_mitra }} ) Telp/SMS/Whatsapp: {{ .whatsapp }}</h3>
 </div>
+{{ end }}
