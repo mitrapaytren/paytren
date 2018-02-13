@@ -1,22 +1,6 @@
----
-site_title: "Web Support PayTren"
-site_description: "Web Support PayTren desc"
-contact:
-    nama: "Akhlis Mujtahid"
-    id_mitra: "TN0108643"
-    whatsapp: "085229009056"
-    bbm: "7db3e061"
+site_title: web support
+site_description: web support paytren
 social:
-    - icon: "facebook"
-      nama: "facebook"
-      url: "https://facebook.com/namaanda"
-    - icon: "twitter"
-      nama: "twitter"
-      url: "https://twitter.com/namaanda"
-    - icon: "gplus"
-      nama: "gplus"
-      url: "https://gplus.com/namaanda"
-    - icon: "instagram"
-      nama: "instagram"
-      url: "https://instagram.com/namaanda"
----
+  - icon: facebook
+    nama: facebook
+    url: 'https://facebook.com/namaanda'
