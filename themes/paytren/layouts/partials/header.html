@@ -91,10 +91,8 @@
                 <div class="nav-wrapper container clearfix">
                     <div class="nav-brand">
                         <a class="site-link" href="{{ .Site.BaseURL }}">
-                            {{ if .Site.Params.logo }}
-                            <picture class="site-logo"><img class="site-img" src="{{ $.Site.Params.logo | relURL }}" alt=""></picture>
-                            {{ else }}
-                            <h1 class="site-title">{{ .Site.Title }}</h1>
+                            {{ with $.Site.Data.setting }}
+                            <picture class="site-logo"><img class="site-img" src="{{ .logo }}" alt=""></picture>
                             {{ end }}
                         </a>
                     </div>
@@ -102,17 +100,19 @@
                         <div class="nav-mobile">
                             <a class="nav-toggle" href="#!"><span class="nav-toggle__item"></span></a>
                         </div>
-                        <nav class="nav-menu">
-                            {{ if .Site.Menus.main }}
+                   
+                         <nav class="nav-menu">
+                            {{ with $.Site.Data.setting }}
                             <ul class="nav-menu__item menu">
 
-                                {{ range sort .Site.Menus.main }}
-                                <li class="menu-item"><a class="menu-item__link" href="{{ .URL }}">{{ .Name }}</a></li>
+                                {{ range .main_menu }}
+                                <li class="menu-item"><a class="menu-item__link" href="{{ .url }}">{{ .name }}</a></li>
                                 {{ end }}
 
                             </ul>
                             {{ end }}
                         </nav>
+
                     </div>
                 </div>
             </div>
