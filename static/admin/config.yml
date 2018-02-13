@@ -15,6 +15,10 @@ collections: # A list of collections the CMS should be able to edit
           - {label: Judul, name: site_title, widget: string, required: false}
           - {label: Deskripsi, name: site_description, widget: string, required: false}
           - {label: Logo, name: logo, widget: "image", required: false}
+          - {label: Google Analytic ID, name: googleAnalyticsUserID, widget: string, required: false}
+          - {label: "Pengguna", name: author, widget: object, fields: [
+              {label: "Nama", name: "name", widget: string},
+              {label: "Twitter ID", name: "twitter_name", widget: string}]}
           - {label: "Main Menu", name: main_menu, widget: list, fields: [
               {label: "Nama", name: "nama", widget: string},
               {label: "URL", name: "url", widget: string}]}
@@ -40,8 +44,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Judul", name: "title", widget: "string"}
       - {label: "Tanggal Terbit", name: "date", widget: "datetime"}
       - {label: "Deskripsi", name: "description", widget: "text"}
-      - {label: "Kategori", name: "categories", widget: "list"}
       - {label: "Tag", name: "tags", widget: "list"}
+      - {label: "Kategori", name: "categories", widget: "list"}
+      - {label: "Penulis", name: "authors", widget: "list", required: false}
       - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
       - {label: "Konten", name: "body", widget: "markdown"}
   - name: "pages"
