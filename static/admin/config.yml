@@ -46,15 +46,12 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
       - {label: "Konten", name: "body", widget: "markdown"}
   - name: "pages"
-    label: "Halaman"
-    files:
-      - folder: "content/page"
-        label: "Halaman"
-        name: "contact"
-        create: true # Allow users to create new documents in this collection
-        slug: "{{slug}}"
-        fields:
-         - {label: "Judul", name: "title", widget: "string"}
-         - {label: "Deskripsi", name: "description", widget: "text"}
-         - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
-         - {label: "Konten", name: "body", widget: "markdown"}
+    label: "Pages"
+    folder: "content/page"
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}"
+    fields:
+     - {label: "Judul", name: "title", widget: "string"}
+     - {label: "Deskripsi", name: "description", widget: "text"}
+     - {label: "Gambar Sampul", name: "image", widget: "image", required: false}
+     - {label: "Konten", name: "body", widget: "markdown"}
