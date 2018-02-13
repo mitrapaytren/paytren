@@ -10,7 +10,7 @@ main_menu:
     url: /marketing-plan
   - nama: Panduan
     url: /panduan
-  - nama: Cara Daftar
+  - nama: Daftar
     url: /cara-daftar
 footer_menu:
   - nama: Beranda
