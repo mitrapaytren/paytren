@@ -1,6 +1,10 @@
-site_title: Web Support PayTren
-site_description: Web Support PayTren desc
-logo: /images/nettren-tuts.png
+site_title: Web Support PayTren setting
+site_description: Web Support PayTren desc setting
+logo: /images/logo.png
+googleAnalyticsUserID: ''
+author:
+    name: Akhlis Mujtahid
+    twitter_name: Akhlis_Mujtahid
 main_menu:
   - nama: Beranda
     url: /
