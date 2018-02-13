@@ -106,7 +106,7 @@
                             <ul class="nav-menu__item menu">
 
                                 {{ range .main_menu }}
-                                <li class="menu-item"><a class="menu-item__link" href="{{ .url }}">{{ .name }}</a></li>
+                                <li class="menu-item"><a class="menu-item__link" href="{{ $baseurl := .Site.BaseURL }}{{ .url }}">{{ .name }}</a></li>
                                 {{ end }}
 
                             </ul>
