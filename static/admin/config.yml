@@ -38,8 +38,8 @@ collections: # A list of collections the CMS should be able to edit
         label: "Global Setting"
         name: "setting"
         fields:
-          - {label: Judul, name: site_title, widget: string}
-          - {label: Deskripsi, name: site_description, widget: string}
+          - {label: Judul, name: site_title, widget: string, required: false}
+          - {label: Deskripsi, name: site_description, widget: string, required: false}
           - {label: "Akun Sosial", name: social, widget: list, fields: [
               {label: "Icon", name: "icon", widget: string},
               {label: "Nama", name: "nama", widget: string},
