@@ -21,19 +21,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Konten", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Halaman"
-    files:
-      - file: "content/_index.md"
-        label: "Beranda"
-        name: "home"
-        fields:
-          - {label: Judul, name: title, widget: string}
-          - {label: Deskripsi, name: description, widget: string}
-          - {label: "Kontak", name: contact, widget: object, fields: [
-              {label: "Nama", name: "nama", widget: string},
-              {label: "ID MITRA", name: "id_mitra", widget: string},
-              {label: "Whatsapp", name: "whatsapp", widget: string},
-              {label: "BBM", name: "bbm", widget: string}]}
-                     
+    files:           
       - file: "data/setting.yml"
         label: "Global Setting"
         name: "setting"
